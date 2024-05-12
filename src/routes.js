@@ -5,7 +5,15 @@ const route = [
         method: 'GET',
         path: '/',
         handler: (request, h) => {
-            return 'Welcome to Recipe Apps API! V1.0.0';
+           return `
+            <h1>Simple Recipe Apps</h1>
+            <p>API ini digunakan untuk menambahkan, mengubah dan menghapus resep masakan</p><br>
+            <p>Available Routes</p><br>
+            <p>GET /recipes</p>
+            <p>GET /recipes/{id}</p>
+            <p>POST /recipes</p>
+            <p>PUT /recipes/{id}</p>
+            <p>DELETE /recipes/{id}</p>`
         },
     },
     {
