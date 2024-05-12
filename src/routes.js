@@ -2,6 +2,13 @@ const {addRecipeHandler, getAllRecipeHandler, getReceipeByIdHandler, updateRecip
 
 const route = [
     {
+        method: 'GET',
+        path: '/',
+        handler: (request, h) => {
+            return 'Welcome to Recipe Apps API! V1.0.0';
+        },
+    },
+    {
         method: 'POST',
         path: '/recipes',
         handler: addRecipeHandler,
